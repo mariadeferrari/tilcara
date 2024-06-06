@@ -1,0 +1,190 @@
+*{
+   padding: 0; 
+   margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#c15365;
+    height: 60px;
+    position:sticky;
+    top: 0;
+}
+
+.logo-flor{
+ align-self: flex-start;
+ border-radius: 10%;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    font-family:"raleway";
+    color: #fdf6f3;  
+}
+
+
+.titulo-principal {
+    display: flex;
+    justify-content: center;
+    font-family: 'Thasadith';
+    font-style: italic;
+    font-size: 22pt;
+    padding: 15px;
+}
+
+.img {
+    width: 100%;
+}
+
+.titulo-sec {
+    font-family: 'Thasadith';
+    font-style: italic;
+    font-size: 18pt;
+    padding: 10px;
+}
+
+p {
+    font-family: "raleway";
+    margin: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 15px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;  
+}
+
+.img-card {
+    width: 320px;
+    height: 200px;  
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 15px;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.titulo-principal {
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    /*display: flex;*/
+    padding: 15px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 180px;
+    background-color: #c15365;
+    font-family:"raleway";
+    font-size: smaller;
+    color:#fdf6f3;
+}
+
+footer ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:#fdf6f3;
+}
+
+.footer-card1{
+    grid-column: 1/3;
+    align-items: center;
+}
+
+.footer-card2{
+    grid-column: 4/5;
+    align-items: center;
+}
+
+.hover:hover{
+    text-decoration: underline;
+    background-color: rgba(224, 140, 178, 0.513);
+    color: #ccdac9;
+}
+
+
+
+
+@media(max-width:620px){
+    /*Despues voy a pasar el menu a menu hamburguesa*/
+    header{
+        height: 170px;
+        padding: 5px;
+    }
+
+    .logo-flor{
+        flex-direction: column;
+    }
+
+    header ul{
+        flex-direction: column;
+        font-size: smaller; 
+    }
+
+    .footer-card1{
+        display: none;
+    }
+}
+   
+
+@media(max-width:420px){
+    header{
+        height: 170px;
+        padding: 5px;
+    }
+
+    .logo-flor{
+     width: 120px;
+    }
+   
+    
+   footer{
+    font-size: x-small;
+    height: 130px ;
+   }
+
+   .card-container{
+    grid-template-columns: 1fr;
+}
+
+}
