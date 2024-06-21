@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: map-get($paleta-colores, color-principal);
+    height: 60px;
+    position:sticky;
+    top: 0;
+       
+        nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        font-family:map-get($fuentes, menue);
+              
+            ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+                       
+                li {
+                display: inline-block;
+                margin: 5px;     
+                
+                    a {
+                    color: map-get($paleta-colores, color-secundario);
+                    text-decoration: none;   
+                }
+            }
+        }
+    }   
+}
+     
+
+.logo-flor {
+ align-self: flex-start;
+ border-radius: 10%;
+}
+
+
+.hover:hover {
+    text-decoration: underline;
+    background-color: rgba(224, 140, 178, 0.513);
+    color: #ccdac9;     
+}
+
+
+
+

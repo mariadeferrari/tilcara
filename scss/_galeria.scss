@@ -1,0 +1,25 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 15px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+ 
+.card-info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center; 
+    transition: 2000ms; 
+}
+
+.card-info:hover {
+    transform: rotateY(360deg);
+}
+
+.img-card {
+    @include tamanios (200px,320px)
+}
+
