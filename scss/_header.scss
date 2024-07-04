@@ -4,8 +4,6 @@ header {
     padding: 20px;
     background-color: map-get($paleta-colores, color-principal);
     height: 60px;
-    position:sticky;
-    top: 0;
        
         nav {
         display: flex;
@@ -24,7 +22,8 @@ header {
                 
                     a {
                     color: map-get($paleta-colores, color-secundario);
-                    text-decoration: none;   
+                    text-decoration: none; 
+
                 }
             }
         }
@@ -35,6 +34,7 @@ header {
 .logo-flor {
  align-self: flex-start;
  border-radius: 10%;
+ 
 }
 
 

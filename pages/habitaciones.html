@@ -35,14 +35,34 @@
     </header> 
 
     <main class="container">
-        <section class="row">
-            <h1 class="titulo-principal">Habitaciones y Servicios</h1> 
-            <img src="../multimedia/hab4.jpg" alt="foto-habitacion" class="col-6"> 
-            <img src="../multimedia/hab3.jpg" alt="foto-habitacion2" class="col-6">
-            <img src="../multimedia/breakfast.jpg" alt="foto-desayuno" class="col-12"> 
-            <img src="../multimedia/desayunador.jpg" alt="foto-desayunador" class="col-6">
-            <img src="../multimedia/patio.jpg" alt="foto-patio" class="col-6">
-        </section>     
+        <h1 class="titulo-principal">Habitaciones y Servicios</h1> 
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../multimedia/hab4.jpg" class="d-block w-100" alt="habitaciones">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/hab3.jpg" class="d-block w-100" alt="habitaciones">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/breakfast.jpg" class="d-block w-100" alt="desayuno">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/desayunador.jpg" class="d-block w-100" alt="desayuno">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/patio.jpg" class="d-block w-w-100" alt="patio">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
 
     <footer>

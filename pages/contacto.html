@@ -37,99 +37,80 @@
     
     <main class="container">
         <h1 class="titulo-principal">Ubicación y Contacto</h1>
-        <!--Formulario de contacto-->
-        <div class="row">
-            <section class="col-6">
-                <form action="form.php" method="POST" class="formulario"> 
-                <section>
-                    <p>Nombre</p> 
-                    <label for="Nombre"></label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Victoria">
-                </section>
-
-                <section>
-                    <p>Apellido</p>
-                    <label for="Apellido"></label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Deferrari">
-                </section>
-
-                <section>
-                    <p>Email</p>
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email">
-                </section>
-
-                <section>
-                    <p>Re ingrese Email</p>
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email">
-                </section>
-
-                <section>
-                    <p>Teléfono</p>
-                    <label for="Telefono"></label>
-                    <input type="number" name="telefono" id="telefono">
-                    <p>(Cod. País + Cod. Área + Número)</p>
-                </section>
-
-                <section>
-                    <p>País</p>
-                    <label for="País"></label>
-                    <input type="text" name="pais" id="pais">
-                </section>    
-                
-                <section>
-                    <p>Ciudad/Provincia</p>
-                    <label for="Ciudad/Provincia"></label>
-                    <input type="text" name="ciudad" id="ciudad">
-                </section> 
-
-                <section>
-                    <p>Fecha de Ingreso</p>
-                    <label for="Fecha de Ingreso"></label>
-                    <input type="date" name="ingreso" id="ingreso">
-                </section>    
-                <section>
-                    <p>Fecha de Egreso</p>
-                    <label for="Fecha de Egreso"></label>
-                    <input type="date" name="egreso" id="egreso">
-                </section>
-                <section>
-                    <p>Habitaciones</p>
-                    <select name="Habitaciones" id="">
-                        <option value="1"><p>1</p></option>
-                        <option value="2"><p>2</p></option>
-                    </select>
-                </section>
-                <section>
-                    <p>Adultos</p>
-                    <select name="Adultos" id="">
-                        <option value="1"><p>1</p></option>
-                        <option value="2"><p>2</p></option>
-                        <option value="3"><p>3</p></option>
-                        <option value="4"><p>4</p></option>
-                    </select>
-                </section>
-                <section>
-                    <p>Menores</p>
-                    <select name="Menores" id="">
-                        <option value="0"><p>0</p></option>
-                        <option value="1"><p>1</p></option>
-                        <option value="2"><p>2</p></option>
-                        <option value="3"><p>3</p></option>
-                    </select>
-                </section>
-                <section>
-                    <p>Consulta o comentario adicional:</p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <input type="submit" value="ENVIAR CONSULTA" class="boton">
-                </section>
-                </form>
-            </section>
-        
+      
+        <form class="row g-3">
+        <div class="col-md-6">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ej.: Victoria" >
+        </div>
+        <div class="col-md-6">
+            <label for="Apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ej.: Deferrari">
+        </div>
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="">
+        </div>
+        <div class="col-md-6">
+            <label for="email" class="form-label">Re ingrese Email</label>
+            <input type="email" class="form-control" id="email" placeholder="">
+        </div>
+        <div class="col-md-4">
+            <label for="Teléfono" class="form-label">Teléfono</label>
+            <input type="number" class="form-control" id="telefono" placeholder="(Cod. País + Cod. Área + Número)">
+        </div>
+        <div class="col-md-4">
+            <label for="pais" class="form-label">País</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+            <label for="ciudad" class="form-label">Ciudad-Provincia</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-2">
+            <label for="Fecha de Ingreso" class="form-label">Fecha de Ingreso</label>
+            <input type="date" class="form-control" id="date">
+        </div>
+        <div class="col-md-2">
+            <label for="Fecha de Egreso" class="form-label">Fecha de Egreso</label>
+            <input type="date" class="form-control" id="date">
+        </div>
+        <div class="col-md-2">
+            <label for="Habitaciones" class="form-label">Habitaciones</label>
+            <select id="" class="form-select">
+            <option selected>1</option>
+            <option>2</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="Adultos" class="form-label">Adultos</label>
+            <select id="" class="form-select">
+            <option selected>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="Menores" class="form-label">Menores</label>
+            <select id="" class="form-select">
+            <option selected>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            </select>
+        </div>
         <div class="col-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.70128603447!2d-65.39634469062096!3d-23.579169562155347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9404cb433ee67855%3A0x257e465b4f2ab874!2sLo%20de%20Flor%20-%20Alojamiento%20en%20Tilcara!5e0!3m2!1ses!2sar!4v1715118615705!5m2!1ses!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-        </div> 
+        <div class="form-coment">
+            <label for="comentarios" class="form-consult">Consulta o comentario adicional</label>
+            <textarea name="" id="comentarios" cols="30" rows="10"></textarea>
+        </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="boton">Enviar</button>
+        </div>
+        </form>
+
     </main>  
 
     <footer>
