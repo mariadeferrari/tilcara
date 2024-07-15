@@ -34,9 +34,12 @@ header {
 .logo-flor {
  align-self: flex-start;
  border-radius: 10%;
- 
+ position: sticky;
+ display: inline-block;
+ margin: 0 0.5rem;
+ animation: flipInX; 
+ animation-duration: 2s; 
 }
-
 
 .hover:hover {
     text-decoration: underline;

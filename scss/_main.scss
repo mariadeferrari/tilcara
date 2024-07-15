@@ -1,62 +1,86 @@
+.titulo-encabezado {
+    display: flex;
+    justify-content: center;
+}
+  
 .titulo-principal {
     display: flex;
     justify-content: center;
-    font-family: 'Thasadith';
+    font-family: "Thasadith";
     font-style: italic;
-    font-size: 22pt;
-    padding: 15px;
+    font-weight: bold;
+    font-size: 16pt;
+    padding: 25px;
+    margin: 0 0.5rem;
+    animation: pulse; 
+    animation-duration: 1s; 
+    animation-delay: 3s;
 }
-
+  
 .img {
     width: 100%;
 }
 
 .titulo-sec {
-    font-family: 'Thasadith';
+    font-family: "Thasadith";
     font-style: italic;
-    font-size: 18pt;
+    font-weight: bold;
+    font-size: 12pt;
     padding: 10px;
 }
-
+  
+.titulo-principal {
+    grid-column: 1/4;
+    justify-self: center;
+}
+  
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+}
+  
+.descripcion {
+    padding: 20px;
+    margin: 30px;
+}
+  
+.descripcion-txt {
+    margin: 20px;
+    font-size: 12pt;
+}
+  
+  
 p {
     font-family: "raleway";
-    margin: 20px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10pt;
 }
 
 .grilla {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    padding: 15px;
+    align-content: space-around;
+    padding: 20px;
     column-gap: 10px;
     row-gap: 15px;
 }
 
-.titulo-principal {
-    grid-column: 1/4;
-    justify-self: center;
+.col-6:hover {
+    opacity: 90%
 }
 
-.titulo-principal:hover {
-    color: map-get($paleta-colores, color-principal);
-    opacity: 80%;
-}
- 
-
-.icons {
-    display: flex;
-    justify-content: space-around;
-    transition: 3s;
-}
-
-.row {
-    transition: 2000ms;
-}
-    .col-6:hover {
-     opacity: 90%
-    }
-
-    .col-12:hover {
+.col-12:hover {
     opacity: 90%    
-    }
+}
+
+.dibujo-map {
+    border-radius: 5%;
+    width: 100%;
+    height: 70%;
+}
+
+
 
