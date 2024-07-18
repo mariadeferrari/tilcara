@@ -146,7 +146,7 @@ p {
   flex-direction: column;
   border: 1px solid #bfdbb9;
   border-radius: 1%;
-  align-items: flex-start;
+  align-items: center;
   font-size: 10pt;
   opacity: 65%;
   animation: zoomIn;
