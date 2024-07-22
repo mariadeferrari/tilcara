@@ -148,19 +148,19 @@ p {
   border-radius: 1%;
   align-items: center;
   font-size: 10pt;
-  opacity: 65%;
+  opacity: 80%;
   animation: zoomIn;
   animation-duration: 2s;
 }
 
 .card-info:hover {
   opacity: 100%;
-  transform: rotateY(360deg);
 }
 
 .img-card {
   height: 200px;
   width: 320px;
+  align-self: center;
 }
 
 .row {
